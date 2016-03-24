@@ -11,7 +11,7 @@ version="040715"
 
 # Notification Email
 # (on|off)
-emailnotification="on"
+emailnotification="off"
 email="adressemail@gmail.com"
 
 # Steam login 
@@ -102,7 +102,7 @@ if [ ! -f "${rootdir}/functions/${functionfile}" ]; then
 	fi
 	cd functions
 	echo -e "    loading ${functionfile}...\c"
-	wget -N /dev/null https://raw.githubusercontent.com/Kugane/exile_lgsm/master/functions/${functionfile} 2>&1 | grep -F HTTP | cut -c45-
+	wget -N /dev/null https://raw.githubusercontent.com/btronquo/arma3exile_lgsm/master/functions/${functionfile} 2>&1 | grep -F HTTP | cut -c45-
 	chmod +x "${functionfile}"
 	cd "${rootdir}"
 fi
